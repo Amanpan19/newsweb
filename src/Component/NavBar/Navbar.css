@@ -32,7 +32,7 @@
     text-align: center;
     margin-top:25px;
     outline: none;
-    border: rgb(177, 175, 175) 2px solid;
+    border: rgb(19, 19, 19) 2px solid;
     font-size: 14px;
     margin-right:8%;
 }
@@ -57,6 +57,40 @@
     color: black;
 }
 
-.list li:hover{
+.list li .link:hover{
     color: rgb(149, 41, 250);
+}
+
+@media (max-width:1269px) {
+    .searchBox{
+        width: 38%;
+        margin-left: 60px;
+    }
+}
+
+@media (max-width:1071px) {
+    .nav{
+        height: 130px;
+    }
+    .list{
+       position: absolute;
+       transform:translateX(-50%);
+       left:50%;
+       bottom:-20px;
+    }
+}
+
+@media (max-width:569px) {
+    .list{
+        margin-left: -20px;
+    }
+    .list li{
+      margin:10px;
+      font-size: 13px;font-weight: 500;
+    }
+
+    .searchBox{
+        width: 48%;
+        margin-left: 60px;
+    }
 }
