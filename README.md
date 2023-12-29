@@ -1,3 +1,16 @@
+
+![image](https://github.com/Amanpan19/newsweb/assets/120437937/23c4c276-3b5e-4350-b170-95db41649e88)
+
+![image](https://github.com/Amanpan19/newsweb/assets/120437937/86091d14-bc53-40bc-81ca-c3093e0196ed)
+
+News
+
+![image](https://github.com/Amanpan19/newsweb/assets/120437937/2665c3ef-62ec-4219-b485-e44f5804f612)
+
+Responsive
+![image](https://github.com/Amanpan19/newsweb/assets/120437937/b7245f9a-9bd6-40cd-9dd5-ee5e69747759)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
