@@ -1,0 +1,62 @@
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 99;
+    border: 1px solid rgb(198, 197, 197);
+    background: white;
+}
+
+@font-face {
+    font-family:gear;
+    src: url("../../Assets/GearsOfPeace.ttf");
+}
+
+.logoContent .content{
+    font-size: 30px;
+    font-weight: 500;
+    color: orangered;
+    font-family: gear;
+}
+
+.searchBox{
+    width: 38%;
+    position: relative;
+    
+}
+
+.searchBox input{
+    width: 99%;
+    height: 45px;
+    text-align: center;
+    margin-top:25px;
+    outline: none;
+    border: rgb(177, 175, 175) 2px solid;
+    font-size: 14px;
+    margin-right:8%;
+}
+
+.searchBox img{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+}
+.list li{
+    margin: 20px;
+    color: white;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.list li:hover{
+    color: rgb(149, 41, 250);
+}
