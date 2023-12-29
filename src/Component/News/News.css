@@ -1,7 +1,7 @@
 .news{
     position: relative;
     top: 100px;
-    
+    overflow-x: hidden;   
 }
 .breaking{
     text-align: center;
@@ -51,4 +51,16 @@ hr{
     margin-top: -10px;
     display: flex;
     justify-content: space-around;
+}
+
+@media (max-width:952px) {
+    .articleGet{
+        width:90%;
+        background-color: rgb(255, 255, 255);
+    }
+    .articleGet .titleDesc .desc{
+        background: yellow;
+        padding: 3px;border-radius: 4px;
+    }
+    
 }

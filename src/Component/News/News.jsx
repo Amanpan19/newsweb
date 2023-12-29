@@ -46,10 +46,11 @@ const News = ({type}) => {
        <p className="breaking">Top News</p>
        </div>
       <div className="newsDataGt">
-      <div className="articleGet">
+
+      {/* <div className="articleGet">
           <img src="https://img.etimg.com/thumb/msid-83515267,width-1200,height-630,imgsize-853209,overlay-etmarkets/photo.jpg" alt="" />
           <div className="titleDesc">
-          <h2>Stock market update: Nifty Bank index advances 1.17%</h2>
+          <h2>Testing purpose, Move down Stock market update: Nifty Bank index advances 1.17%</h2>
           <p className='desc'>The Nifty Bank index closed 1.17 per cent  up  at 48282.2.</p>
           </div>
             <p className='content'>NEW DELHI: The Nifty Bank index closed on a positive note on Wednesday. Shares of Punjab National Bank(up 3.72 per cent), Bank of Baroda(up 2.95 per cent), IndusInd Bank Ltd.(up 1.69 per cent), State… [+833 chars]"</p> 
@@ -61,7 +62,8 @@ const News = ({type}) => {
             <p className='author'>ETMarkets.com</p>
             <p className='date'>23-12-27T11:46:58Z</p>
           </div>
-      </div>
+      </div> */}
+      
         {news?.map((article,index)=>(
           <div key={index} className="articleGet">
             <img src={article?.urlToImage} alt="" />
@@ -86,43 +88,3 @@ const News = ({type}) => {
 }
 
 export default News
-
-  // <div className='news'>
-{/* <p>{props.type}</p> */}
-      //      <div className="head">
-      //  <p className="breaking">Top News</p>
-      //  </div>
-      // <div className="newsDataGt">
-      // <div className="articleGet">
-      //     <img src="https://img.etimg.com/thumb/msid-83515267,width-1200,height-630,imgsize-853209,overlay-etmarkets/photo.jpg" alt="" />
-      //     <div className="titleDesc">
-      //     <h2>Stock market update: Nifty Bank index advances 1.17%</h2>
-      //     <p className='desc'>The Nifty Bank index closed 1.17 per cent  up  at 48282.2.</p>
-      //     </div>
-      //       <p className='content'>NEW DELHI: The Nifty Bank index closed on a positive note on Wednesday. Shares of Punjab National Bank(up 3.72 per cent), Bank of Baroda(up 2.95 per cent), IndusInd Bank Ltd.(up 1.69 per cent), State… [+833 chars]"</p> 
-            
-      //       <a href="" className='read'>Read More</a>
-           
-      //     <hr />
-      //     <div className="authDate">
-      //       <p className='author'>ETMarkets.com</p>
-      //       <p className='date'>23-12-27T11:46:58Z</p>
-      //     </div>
-      // </div>
-      // </div>
-      //   {/* {news?.map((article,index)=>(
-      //     <div key={index} className="articleGet">
-      //       <img src={article?.urlToImage} alt="" />
-      //       <div className="titleDesc">
-      //         <h2>{article?.title}</h2>
-      //         <p className='desc'>{article?.description}</p>
-      //       </div>
-      //         <p className='content'>{article?.content}</p>
-      //         <hr />
-      //       <div className="authDate">
-      //         <p className='author'>{article?.author}</p>
-      //         <p className='date'>{article?.publishedAt}</p>
-      //       </div>
-      //     </div>
-      //   ))} */}
-      // </div>
