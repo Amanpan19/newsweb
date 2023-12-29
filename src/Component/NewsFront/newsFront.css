@@ -1,0 +1,75 @@
+.webFront{
+    margin-top: 99px;
+}
+@font-face {
+    font-family:gear;
+    src: url("../../Assets/GearsOfPeace.ttf");
+}
+.webFront h2{
+    color: rgb(255, 0, 60);
+    padding: 40px;
+}
+
+.logo{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo p{
+    font-size: 80px;
+    color: white;
+    font-family: gear;
+}
+
+.logo p span{
+    color: orange;
+}
+
+.webData{
+    
+    background-color:white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
+}
+
+.article{
+    width:22%;
+    box-shadow:0 1px 50px grey;
+    margin: 4px auto;
+    border-radius:5px;
+    padding: 4px;
+    background: azure;
+}
+.article img{
+  width:99%;
+  height: 170px;
+  border-radius: 8px;
+}
+
+
+.article .titleDes{
+   font-size: 14px;
+    text-align: center;
+}
+
+hr{
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(90deg,rgb(235, 153, 31),rgb(239, 239, 14));
+    border: none;
+}
+
+.end{
+    margin-top: 60px;
+    width: 80%;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg,rgb(235, 153, 31),rgb(239, 14, 97));
+    border: none;
+}
