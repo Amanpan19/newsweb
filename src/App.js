@@ -7,7 +7,10 @@ import Footer from './Component/Footer/Footer';
 import News from './Component/News/News';
 
 
+
 function App() {
+  
+
   return (
     <div className="App">
       
