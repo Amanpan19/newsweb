@@ -8,10 +8,10 @@ const News = ({type}) => {
   const newsData =async()=>{
       
     // const url1 = `https://newsapi.org/v2/everything?q=${news}&from=2023-11-28&sortBy=publishedAt&apiKey=5337793ea772470eb9685268daa6b81e`;
-    const url = (type ? `https://newsapi.org/v2/everything?q=${type}&from=2023-11-28&sortBy=publishedAt&apiKey=5337793ea772470eb9685268daa6b81e`:`https://newsapi.org/v2/everything?q=$india&from=2023-11-28&sortBy=publishedAt&apiKey=5337793ea772470eb9685268daa6b81e`) ;  
+    // const url = (type ? `https://newsapi.org/v2/everything?q=${type}&from=2023-11-28&sortBy=publishedAt&apiKey=5337793ea772470eb9685268daa6b81e`:`https://newsapi.org/v2/everything?q=$india&from=2023-11-28&sortBy=publishedAt&apiKey=5337793ea772470eb9685268daa6b81e`) ;  
     // const url = `https://newsapi.org/v2/everything?q=india&from=2023-11-28&sortBy=publishedAt&apiKey=8c147bd042ad4d3a9aaa56bf1135db4d`;
     //  const url = `https://newsapi.org/v2/everything?q=$india&from=2023-11-28&sortBy=publishedAt&apiKey=ac1cd6c7c926433ab799dce78c6753ed`;
-      // const url = (type ? `https://newsapi.org/v2/everything?q=${type}&from=2023-11-28&sortBy=publishedAt&apiKey=5bb8df76f578431f80c85a4c9bd311ac`:`https://newsapi.org/v2/everything?q=$india&from=2023-11-28&sortBy=publishedAt&apiKey=5bb8df76f578431f80c85a4c9bd311ac`) ;
+      const url = (type ? `https://newsapi.org/v2/everything?q=${type}&from=2023-11-28&sortBy=publishedAt&apiKey=5bb8df76f578431f80c85a4c9bd311ac`:`https://newsapi.org/v2/everything?q=$india&from=2023-11-28&sortBy=publishedAt&apiKey=5bb8df76f578431f80c85a4c9bd311ac`) ;
      
       const response = await fetch(url);
       const data = await response.json();
