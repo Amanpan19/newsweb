@@ -2,15 +2,15 @@ import React, { useState } from 'react'
 import '../NavBar/Navbar.css'
 import searchIcon from '../../Assets/search.png';
 import {Link} from 'react-router-dom';
-import Categories from '../../Pages/Categories';
+
 const Navbar = () => {
 
     const[search, setSearch] = useState('');
 
     const handleInputVal = (event) =>{
       if(event.key==="Enter"){
+        console.log("button clicked");
         setSearch(event.target.value);
-        <Categories type={event.target.value}/>
       }  
     };
 
@@ -21,7 +21,7 @@ const Navbar = () => {
             <p className='content'>News.Web</p>
         </div>
         <div className="searchBox">
-            <input type="text" placeholder='Search' value={search} onChange={handleInputVal}/>
+            <input type="text" placeholder='Search / Not Working ' onKeyDown={handleInputVal}/>
             <img src={searchIcon} alt=""/>
         </div>
         
