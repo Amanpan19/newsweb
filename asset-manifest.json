@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/newsweb/static/css/main.3adce32e.css",
+    "main.js": "/newsweb/static/js/main.204c2f59.js",
+    "static/js/787.609db0f2.chunk.js": "/newsweb/static/js/787.609db0f2.chunk.js",
+    "static/media/GearsOfPeace.ttf": "/newsweb/static/media/GearsOfPeace.df03d7fba0fdf3f8b9ec.ttf",
+    "index.html": "/newsweb/index.html",
+    "main.3adce32e.css.map": "/newsweb/static/css/main.3adce32e.css.map",
+    "main.204c2f59.js.map": "/newsweb/static/js/main.204c2f59.js.map",
+    "787.609db0f2.chunk.js.map": "/newsweb/static/js/787.609db0f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3adce32e.css",
+    "static/js/main.204c2f59.js"
+  ]
+}
