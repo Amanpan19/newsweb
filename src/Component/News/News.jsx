@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../News/News.css';
+import webPng from '../../Assets/web.png'
 
 const News = ({type}) => {
    
@@ -8,7 +9,7 @@ const News = ({type}) => {
   const newsData =async()=>{
       
 
-      const url = (type ? `https://newsapi.org/v2/everything?q=${type}&from=2023-11-28&sortBy=publishedAt&apiKey=5bb8df76f578431f80c85a4c9bd311ac`:`https://newsapi.org/v2/everything?q=$india&from=2023-11-28&sortBy=publishedAt&apiKey=5bb8df76f578431f80c85a4c9bd311ac`) ;
+      const url = (type ? `https://newsapi.org/v2/everything?q=${type}&from=2023-12-10&sortBy=publishedAt&apiKey=5bb8df76f578431f80c85a4c9bd311ac`:`https://newsapi.org/v2/everything?q=$india&from=2023-12-10&sortBy=publishedAt&apiKey=5bb8df76f578431f80c85a4c9bd311ac`) ;
      
       const response = await fetch(url);
       const data = await response.json();
@@ -46,8 +47,8 @@ const News = ({type}) => {
          <div className="newsDataGt">
 
               {news?.map((article,index)=>(
-                <div key={index} className="articleGet">
-                  <img src={article?.urlToImage} alt="" />
+                <div key={index} className="articleGet">{article?.urlToImage?(<img src={article?.urlToImage} alt="" />):(<img src={webPng} alt="" />)}
+                  
                   <div className="titleDesc">
                     <h2>{article?.title}</h2>
                     <p className='desc'>{article?.description}</p>
