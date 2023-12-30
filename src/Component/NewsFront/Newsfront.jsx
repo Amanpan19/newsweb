@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../NewsFront/newsFront.css'
+import newsWebImg from '../../Assets/web.png';
 const Newsfront = () => {
 
     const[newsHead,setNewsHead]=useState([])
@@ -36,8 +37,9 @@ const Newsfront = () => {
       {newsHead?.map((article,index)=>(
 
           <div key={index} className="article">
-          
-            <img src={article?.urlToImage} alt="" />
+            
+            {article?.urlToImage?( <img src={article?.urlToImage} alt="" />):( <img src={newsWebImg} alt="" />)}
+           
 
             <div className="titleDes">
               <h4>{article?.title}</h4>

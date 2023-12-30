@@ -3,6 +3,7 @@ import '../NavBar/Navbar.css'
 import searchIcon from '../../Assets/search.png';
 import {Link} from 'react-router-dom';
 
+
 const Navbar = () => {
 
     const[search, setSearch] = useState('');
@@ -11,6 +12,7 @@ const Navbar = () => {
     const handleInputVal = (event) =>{
       if(event.key==="Enter"){
         console.log("button clicked");
+        console.log(event.target.value);
         setSearch(event.target.value);
       }  
     };
@@ -22,7 +24,7 @@ const Navbar = () => {
         <div className="logoContent">
             <p className='content'>News.Web</p>
         </div>
-        
+
         <div className="searchBox">
             <input type="text" placeholder='Search / Not Working ' onKeyDown={handleInputVal}/>
             <img src={searchIcon} alt=""/>
