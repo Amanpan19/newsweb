@@ -7,9 +7,7 @@ const Newsfront = () => {
     const newsData =async()=>{
         
        const url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=5bb8df76f578431f80c85a4c9bd311ac`;
-    //    const url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=5337793ea772470eb9685268daa6b81e`;
-    //    const url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=8c147bd042ad4d3a9aaa56bf1135db4d`;
-       
+
        
         const response = await fetch(url);
         const data = await response.json();
@@ -26,7 +24,47 @@ const Newsfront = () => {
 
   return (
     <div>
-    {/* <div className="webFront">
+      <div className="webFront">
+
+        <div className="logo">
+          <p>News<span>.Web</span></p>
+        </div>
+
+      <h2>Top Headlines</h2>
+      <div className="webData">
+
+      {newsHead?.map((article,index)=>(
+
+          <div key={index} className="article">
+          
+            <img src={article?.urlToImage} alt="" />
+
+            <div className="titleDes">
+              <h4>{article?.title}</h4>
+            </div>
+              <hr />
+
+            <div className="authDate">
+              <p className='author'>{article?.author}</p>
+            </div>
+          </div>
+
+        ))}
+      </div>
+      
+      </div>
+      <hr className='end'/>
+    </div>
+    
+  )
+}
+
+export default Newsfront
+
+
+
+
+ {/* <div className="webFront">
     <div className="logo">
         <p>News<span>.Web</span></p>
     </div>
@@ -44,32 +82,3 @@ const Newsfront = () => {
       </div>
       </div>
     </div> */}
-    
-      <div className="webFront">
-      <div className="logo">
-        <p>News<span>.Web</span></p>
-      </div>
-      <h2>Top Headlines</h2>
-      <div className="webData">
-      {newsHead?.map((article,index)=>(
-          <div key={index} className="article">
-            <img src={article?.urlToImage} alt="" />
-            <div className="titleDes">
-              <h4>{article?.title}</h4>
-            </div>
-              <hr />
-            <div className="authDate">
-              <p className='author'>{article?.author}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-      
-      </div>
-      <hr className='end'/>
-    </div>
-    
-  )
-}
-
-export default Newsfront
