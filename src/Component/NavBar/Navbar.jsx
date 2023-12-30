@@ -7,6 +7,7 @@ const Navbar = () => {
 
     const[search, setSearch] = useState('');
 
+    // created for search operation, but need to do some other things as well
     const handleInputVal = (event) =>{
       if(event.key==="Enter"){
         console.log("button clicked");
@@ -17,9 +18,11 @@ const Navbar = () => {
   return (
     <div>
       <div className="nav">
+
         <div className="logoContent">
             <p className='content'>News.Web</p>
         </div>
+        
         <div className="searchBox">
             <input type="text" placeholder='Search / Not Working ' onKeyDown={handleInputVal}/>
             <img src={searchIcon} alt=""/>
